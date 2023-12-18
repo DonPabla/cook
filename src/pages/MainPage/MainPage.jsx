@@ -33,6 +33,12 @@ function MainPage(props) {
     '../../../src/assets/slaider.png',
   ];
 
+  const slideLinks = [
+    '/eastern',
+    '/korean',
+    '/japan',
+  ];
+
   const prevSlide = () => {
     const prev = currentSlide === 0 ? slides.length - 1 : currentSlide - 1;
     setCurrentSlide(prev);
@@ -41,6 +47,13 @@ function MainPage(props) {
   const nextSlide = () => {
     const next = currentSlide === slides.length - 1 ? 0 : currentSlide + 1;
     setCurrentSlide(next);
+  }; 
+
+
+  const [menuVisible, setMenuVisible] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuVisible(!menuVisible);
   };
 
 
@@ -49,10 +62,20 @@ function MainPage(props) {
       <header>
         <nav>
           <img className={module.nav_item} src={logo}></img>
-          <div className={module.navCategory}>
-            <Link to={'/korean'}><div className={module.nav_cat}>категория</div></Link>
-            <div><img className={module.nav_img} src={vector}></img></div>
-          </div>
+          {/* <div className={module.navCategory}>
+            <div className={module.nav_cat} onClick={toggleMenu}>
+              Категории
+            </div>
+            {/* <div>
+              <img className={module.nav_img} src={vector} alt="Вектор"></img>
+            {menuVisible && (
+              <div className={module.navCatContainer}>
+                <div className={module.navCat}>Категория 1</div>
+                <div className={module.navCat}>Категория 2</div>
+                <div className={module.navCat}>Категория 3</div>
+              </div>
+            )}
+          </div> */}
           <Link to={'/recipes'}>О нас</Link>
           {/* <a className={module.nav_item} href='#'>О нас</a> */}
           <div className={module.nav_itemStart}>
@@ -125,22 +148,19 @@ function MainPage(props) {
       </div>
 
       <div className={module.slaider_box}>
-        <button onClick={nextSlide} className={module.slaiderBtnB}>
-          <img src={before}></img>
-        </button>
-        <img src={slides[currentSlide]} alt="Current" />
-        <button onClick={prevSlide} className={module.slaiderBtnN}>
-          <img src={next}>
-          </img>
-        </button>
-        <div className={module.slaider}>
-
-
-        </div>
+      <button onClick={nextSlide} className={module.slaiderBtnB}>
+        <img src={before} alt="Previous" />
+      </button>
+      <a href={slideLinks[currentSlide]} target="_blank" rel="noopener noreferrer">
+        <img src={slides[currentSlide]} alt={`Slide ${currentSlide + 1}`} />
+      </a>
+      <button onClick={prevSlide} className={module.slaiderBtnN}>
+        <img src={next} alt="Next" />
+      </button>
+      <div className={module.slaider}>
+        {/* Дополнительный контент слайдера */}
       </div>
-
-
-
+    </div>
     </div>
 
 

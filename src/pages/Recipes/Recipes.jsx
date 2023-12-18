@@ -15,10 +15,6 @@ function App() {
     <header>
         <nav>
             <img className={module.nav_item} src={logo}></img>
-            <div className={module.navCategory}>
-                <div className={module.nav_cat}>категория</div>
-                <div><img className={module.nav_img} src={vector}></img></div>
-            </div>
             <a className={module.nav_item} href='#'>О нас</a>
             <div className={module.nav_itemStart}>
                 <div className={module.itemStart}>Начать</div>

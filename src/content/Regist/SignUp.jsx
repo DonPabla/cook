@@ -51,7 +51,6 @@ function SignIn(props) {
             </div>
 
             <div className={module.sign_in}>
-                <div className={module.block2_text}>Вход через социальные сети</div>
                 <Link to={'/signIn'}><input className={module.signIn_text} type="submit" name="submit" value="Войти"/></Link>
             </div>
 

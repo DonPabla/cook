@@ -112,7 +112,7 @@ a {
     }
 
     .rice {
-        width: 700px;
+        width: 100%;
         height: auto;
         // margin-bottom: 20vh;
     }
@@ -166,7 +166,7 @@ a {
     }
 
     .chopsticks {
-        width: 300px;
+        width: 100%;
     }
 
 }
@@ -223,3 +223,55 @@ a {
     }
     
     }
+    @media  (max-width: 1127px) {
+        nav {
+            gap: 7vh;
+        }
+        
+        .container_1  {
+                display: flex;
+                justify-content: space-between;
+                align-items: stretch;
+                margin-top: 20vh;
+                flex-direction: column;
+        
+                .rice {
+                    margin-top: 4vh;
+                    width: 100%;
+                }
+        
+                .block_1 {
+        
+                    .korzina {
+                        width: auto;
+                    }
+        
+        
+                .bfm {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    margin-top: 8vh;
+        
+        
+                    .button {
+                        cursor: pointer;
+                        padding: 1vh 10vh ;
+                        border: 1px;
+                        border-radius: 59px;
+                        background-color: #FFB84E;
+                    }
+                }
+            }
+        
+        
+        }
+        
+        .container_2 {
+        
+            .chopsticks {
+                width: 100%;
+            }
+        }
+        
+        }
