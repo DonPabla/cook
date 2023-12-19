@@ -28,9 +28,9 @@ function MainPage(props) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
-    '../../../src/assets/slider3.jpg',
-    '../../../src/assets/slider2.jpg',
-    '../../../src/assets/slaider.png',
+    '/src/assets/slider3.jpg',
+    '/src/assets/slider2.jpg',
+    '/src/assets/slaider.png',
   ];
 
   const slideLinks = [
