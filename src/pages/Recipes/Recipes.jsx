@@ -1,5 +1,6 @@
 import React from 'react';
 import module from './Recipes.module.scss'
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 
 import logo from '../../assets/Group 25.png';
 import white from '../../assets/white.png';
@@ -14,7 +15,9 @@ function App() {
     <div className="App">
     <header>
         <nav>
-            <img className={module.nav_item} src={logo}></img>
+        <Link to="/" className={module.nav_item}>
+  <img src={logo} alt="Логотип" />
+</Link>
             <a className={module.nav_item} href='#'>О нас</a>
             <div className={module.nav_itemStart}>
                 <div className={module.itemStart}>Начать</div>

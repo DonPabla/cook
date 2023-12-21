@@ -60,8 +60,9 @@ function MainPage(props) {
   return (
     <div className="App">
       <header>
-        <nav>
-          <img className={module.nav_item} src={logo}></img>
+        <nav><Link to="/" className={module.nav_item}>
+            <img src={logo} alt="Логотип" />
+          </Link>
           {/* <div className={module.navCategory}>
             <div className={module.nav_cat} onClick={toggleMenu}>
               Категории

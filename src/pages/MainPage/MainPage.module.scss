@@ -22,7 +22,7 @@ nav {
   text-align: center;
   align-items: center;
   gap: 20vh;
-  margin-top: 20px;
+  margin-top: 35px;
 }
 
 a {
@@ -571,3 +571,28 @@ footer {
 //   border: 2px solid #000;
 //   gap: 40px;
 // }
+
+@media (max-width: 459px) {
+    .hatBack {
+      display: none;
+    }
+    .hat {
+      display: none;
+    }
+
+    .luk {
+      display: none;
+    }
+
+    .lukBack {
+      display: none;
+    }
+
+    .block2_text {
+      width: 100%;
+    }
+    
+    .block2_tittle {
+      margin-top: 3vh;
+    }
+}

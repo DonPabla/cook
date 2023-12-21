@@ -25,15 +25,15 @@ function Footer(props) {
           <ul>
             {/* <li className={module.ul1}><Link to='/shop-template/abousus'>О нас</Link></li> */}
             {/* <li className={module.ul1}><Link>Справка и поддержка</Link></li> */}
-            <li className={module.ul1}><a href='#'>Условия использования</a></li>
-            <li className={module.ul1}><a href='#'>Настройки файлов cookie</a></li>
-            <li className={module.ul1}><a href='#'>Карта сайта</a></li>
+            <li className={module.ul1}><a href=''>Условия использования</a></li>
+            <li className={module.ul1}><a href=''>Настройки файлов cookie</a></li>
+            <li className={module.ul1}><a href=''>Карта сайта</a></li>
           </ul>
         </div>
         <div className={module.footer_block3}>
           <ul>
-            <Link to={'/japan'}><li className={module.ul2}>Контакты</li></Link>
-            <Link to={'/eastern'}><li className={module.ul2}>Скидки</li></Link>
+            <Link to={''}><li className={module.ul2}>Контакты</li></Link>
+            <Link to={''}><li className={module.ul2}>Скидки</li></Link>
             <li className={module.ul2}>Условия использования</li>
           </ul>
           <div className={module.icons}>
